@@ -56,12 +56,23 @@
             </div>
         </div>
     </section>
-    <section class="decription">
+    <section class="description">
         <div class="container">
-            <article>
-                <h2>Creative Agency</h2>
-                <p>Here at Innova Production we love what we do. We’re creative, innovators, tech saavy, fun, social,  curious and analytical. We make a meaningful difference in brands, businesses an people.  We’re experts in consumer behavior, production, branding and strategy. We know how to maximize our traditional efforts and thus connect with a top-notch digital strategy and social media approach, to achieve a wider richer consumer experience.</p>
-            </article>
+            <div class="d-flex w100 align-items-end">
+                <article>
+                    <h2>Creative Agency</h2>
+                    <p>Here at Innova Production we love what we do. We’re creative, innovators, tech saavy, fun, social,  curious and analytical. We make a meaningful difference in brands, businesses an people.  We’re experts in consumer behavior, production, branding and strategy. We know how to maximize our traditional efforts and thus connect with a top-notch digital strategy and social media approach, to achieve a wider richer consumer experience.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="reel">
+        <div class="container">
+            <div class="d-flex w100">
+                <div class="reel-area w100">
+
+                </div>
+            </div>
         </div>
     </section>
     <section class="video-sliders">
@@ -69,6 +80,7 @@
     </section>
     <section class="video-prod">
         <div class="container">
+            <h2>Video Production</h2>
             <p>We believe in creating cutting edge, visually stunning, emotionally, compelling, intellectually and engaging content that helps captures the heart and minds of your target demo. Shareable videos that inspire, entertain and convert to help drive growth.</p>
             <p>We are a creative and full-service video production company, we help brands communicate their values, identities, and offerings. We do this in a way that visually, emotionally, and intellectually appeals to your target audience.</p>
         </div>
@@ -84,5 +96,49 @@
             </div>
         </div>
     </section>
+    <section class="captivate">
+        
+    </section>
+    <section class="brand-strategy">
+
+    </section>
+    <section class="cover-slides">
+
+    </section>
+    <section class="digital-strategy">
+
+    </section>
+    <section class="web-mobile">
+
+    </section>
+    <section class="social">
+
+    </section>
+    <section class="our-team">
+
+    </section>
+    <section class="profiles">
+
+    </section>
+    <footer class="w100 d-flex justify-content-center flex-column text-center">
+        <img src="" alt="">
+        <nav class="footer-nav d-flex w100 justify-content-center">
+            <div class="nav-item">Privacy Policy</div>
+            <div class="nav-item">Term & Conditions</div>
+            <div class="nav-item">Disclaimer</div>
+            <div class="nav-item">California Privacy Notice</div>
+            <div class="nav-item">ADA Compliance</div>
+            <div class="nav-item">Do Not Sell My Info</div>
+        </nav>
+        <p>&#169; Copyright <span id="thisYear"></span> INNOVA. All Rights Reserved.</p>
+
+    </footer>
+    <script>
+        window.onload = function(){
+            var today = new Date;
+            var theYear = today.getFullYear();
+            document.getElementById('thisYear').innerHTML = theYear;
+        }
+    </script>
 </body>
 </html>

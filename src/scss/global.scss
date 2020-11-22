@@ -1,7 +1,7 @@
 /**
 *** CSS GRID
 *** Author: bertguydev 
-*** Thanks to Zach Cole for initial build
+*** So it goes.
 **/
 
 /* Browser Reset */
@@ -17,6 +17,10 @@ html, body {
 .d-flex {
 	flex-wrap: wrap;
 	display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 .justify-content-center {
@@ -96,21 +100,19 @@ p {
 
 /* POSITIONING */
 
-.left {
+.text-left {
   text-align: left;
 }
 
-.right {
+.text-right {
   text-align: right;
 }
 
-.center {
+.text-center {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.justify {
+.text-justify {
   text-align: justify;
 }
 

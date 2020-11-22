@@ -1,0 +1,11 @@
+// Safari Fallbacks
+.description:not(:root:root) {
+    background-image: url(../images/desc-bg.jpg);
+}
+
+// IE Fallbacks
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .description {
+        background-image: url(../images/desc-bg.jpg);
+    }
+}
