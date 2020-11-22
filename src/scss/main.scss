@@ -1,0 +1,29 @@
+// Main css file
+
+// Start Header Area
+header {
+    background: #272727;
+
+    .logo {
+        padding: 10px;
+    }   
+    nav {
+
+        .nav-item {
+            color: #595959;
+            padding: 10px 15px;
+        }
+    }
+}
+
+// Main Hero Area
+main {
+    .overlay {
+        min-height: 35em;
+        border: 1px solid;
+        text-transform: uppercase;
+    }
+    h1 {
+        
+    }
+}

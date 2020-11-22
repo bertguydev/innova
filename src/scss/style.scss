@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Gotham";
+    src: font-files("../fonts/Gotham-Book.ttf", "../fonts/Gotham-Medium.ttf"); 
+    font-weight: font-files(400, 700);
+}
+@import "main.scss";
+@import "mixins.scss";
+@import "global.scss";
