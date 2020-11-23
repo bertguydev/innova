@@ -3,9 +3,16 @@
     background-image: url(../images/desc-bg.jpg);
 }
 
+.brand-strategy:not(:root:root) {
+    background-image: url(../images/brand-section.jpg);
+}
+
 // IE Fallbacks
 @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .description {
         background-image: url(../images/desc-bg.jpg);
+    }
+    .brand-strategy {
+        background-image: url(../images/brand-section.jpg);
     }
 }

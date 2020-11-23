@@ -9,7 +9,8 @@ header {
         padding: 10px;
 
         img {
-            max-width: 210px;
+            max-width: 260px;
+            margin: 30px 0 0;
         }
     }   
     nav {
@@ -27,7 +28,7 @@ header {
 
 // Main Hero Area
 main {
-    height: calc(100vh - 124px);
+    height: calc(100vh - 178px);
 
     .overlay {
         height: 100%;
@@ -139,9 +140,6 @@ main {
         min-height: 630px;
     }
 
-    article {
-
-    }
     h2 {
         font-size: 55px;
         margin: 0 0 5px;
@@ -187,6 +185,60 @@ main {
     }
 }
 
+// Explore Section & Captivate Sections
+.explore, .captivate {
+    padding: 80px 0;
+
+    .col-5 {
+        
+
+        h2 {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 60px;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.explore {
+    background-color: #757575;
+    
+
+    h2, p {
+        color: #cbcbcb;
+    }
+}
+
+.captivate {
+    background-color: #a1a1a1;
+
+    h2, p {
+        color: #585858;
+    }
+}
+
+.sub-reels {
+    width: 50%;
+    min-height: 375px;
+    border-radius: 10px;
+    background-color: #999;
+}
+
+// Brand Stategy
+.brand-strategy  {
+    background-image: url(../images/brand-section.webp);
+    background-repeat: no-repeat;
+    background-color: #424242;
+    color: #9c9c9c;
+
+    .w100 {
+        min-height: 630px;
+    }
+}
+
 // Footer
 footer {
     background: #282828;
@@ -200,5 +252,10 @@ footer {
 
     .nav-item:nth-of-type(1) {
         border-left: none;
+    }
+    svg {
+        fill:#696969;
+        max-width: 250px;
+        margin: 0 auto 20px;
     }
 }
