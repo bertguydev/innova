@@ -239,6 +239,16 @@ main {
     }
 }
 
+// Product Covers Slider Section
+.cover-slides {
+    width: 100%;
+    overflow-x: hidden;
+    .carousel {
+        width: 2600px;
+        
+    }
+}
+
 // Footer
 footer {
     background: #282828;
