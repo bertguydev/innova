@@ -42,12 +42,12 @@ main {
 
         h1 {
             font-size: 93px;
-            color: #cbcbcb;
+            color: $lightgrey;
             margin: 0 0 0px;
         }
         p {
             text-transform: uppercase;
-            color: #cbcbcb;
+            color: $lightgrey;
             font-size: 28px;
             margin: 0;
         }
@@ -208,7 +208,7 @@ main {
     
 
     h2, p {
-        color: #cbcbcb;
+        color: $lightgrey;
     }
 }
 
@@ -247,6 +247,49 @@ main {
         width: 2600px;
         
     }
+}
+
+// Digital Strategy
+.digital-strategy {
+    padding: 90px 0;
+    background-color: #646464;
+    color: $lightgrey;
+
+    h2 {
+        font-size: 56px;
+        margin: 0;
+    }
+    p {
+        font-size: 22px;
+    }
+}
+
+// Web and Mobile
+.web-mobile {
+    background-color: #3d3d3d;
+    color: $lightgrey;
+
+    h2 {
+        margin: 0;
+    }
+    p {
+        font-size: 22px;
+    }
+}
+
+// Social Strategy
+.social {
+    background-color: #5c5c5c;
+    color: $lightgrey;
+
+    h2 {
+        font-size: 60px;
+        margin: 0;
+    }
+}
+
+.our-team {
+    color: $lightgrey;
 }
 
 // Footer
