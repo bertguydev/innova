@@ -270,10 +270,28 @@ main {
     color: $lightgrey;
 
     h2 {
+        font-size: 62px;
+        text-transform: uppercase;
         margin: 0;
     }
     p {
-        font-size: 22px;
+        font-size: 20px;
+        margin: 0;
+        line-height: 1.5;
+    }
+    
+    article {
+        max-width: 40%;
+    }
+
+    .p-lax {
+        background: url(../images/web-dev-p.png);
+        background-attachment: scroll;
+        width: 750px;
+        height: 550px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 891px calc(100% - 10px);
     }
 }
 
@@ -283,8 +301,23 @@ main {
     color: $lightgrey;
 
     h2 {
-        font-size: 60px;
+        font-size: 62px;
+        text-transform: uppercase;
         margin: 0;
+    }
+
+    article {
+        max-width: 40%;
+    }
+    
+    .p-lax {
+        background: url(../images/mobile.png);
+        background-attachment: scroll;
+        width: 750px;
+        height: 550px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 251px calc(100% - 10px);
     }
 }
 
