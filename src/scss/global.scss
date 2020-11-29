@@ -19,6 +19,10 @@ html, body {
 	display: flex;
 }
 
+.d-flex.no-wrap {
+    flex-wrap: nowrap;
+}
+
 .flex-column {
     flex-direction: column;
 }

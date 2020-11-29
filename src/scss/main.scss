@@ -57,6 +57,11 @@ main {
         background-image: url(../images/ph.jpg);
         background-size: cover;
         height: 100%;
+        overflow-y: hidden;
+
+        video {
+            width: 100%;
+        }
     }
 
 }
@@ -158,10 +163,13 @@ main {
 
     .reel-area {
         border-radius: 7px;
-        background: #111;
-        min-height: 600px;
         max-width: 1100px;
         margin: 0 auto;
+    }
+
+    video {
+        max-width: 1100px;
+        border-radius: 15px;
     }
 }
 
@@ -323,6 +331,54 @@ main {
 
 .our-team {
     color: $lightgrey;
+    background-image: url(../images/our-team.jpg);
+    background-size: cover;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 75px;
+        margin: 0;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .w100 {
+        min-height: 600px;
+    }
+}
+
+.profiles {
+    padding: 20px 0;
+    color: #a0a0a0;
+
+    .profile {
+        margin: 30px 0;
+    }
+
+    .profile-photo {
+        width: 26%;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    h3 {
+        font-size: 44px;
+        margin: 0;
+    }
+
+    h4, p {
+        font-size: 26px;
+        line-height: 1.55;
+    }
+    
+    h4 {
+        margin: 0;
+    }
+
 }
 
 // Footer
