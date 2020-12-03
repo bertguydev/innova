@@ -80,7 +80,7 @@
         </div>
     </section>
     <section class="video-sliders">
-
+        
     </section>
     <section class="video-prod">
         <div class="container">
@@ -93,7 +93,7 @@
         <div class="container">
             <div class="d-flex">
                 <div class="sub-reels">
-
+                    <video id="droneReel" src="images/videos/drone.mp4" controls></video>
                 </div>
                 <div class="col-5 d-flex flex-column justify-content-center">
                     <h2>Explore a new world</h2>
@@ -104,13 +104,13 @@
     </section>
     <section class="captivate">
         <div class="container">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between" controls>
                 <div class="col-5 d-flex flex-column justify-content-center">
                     <h2>Captivate Your Audience</h2>
                     <p>without limitations to creativity and storytelling.</p>
                 </div>
                 <div class="sub-reels">
-    
+                    <video id="absReel" src="images/videos/abs.mp4" controls></video>
                 </div>
             </div>
             
@@ -233,10 +233,22 @@
 
             document.addEventListener('scroll', function(scrollEvent){
                 var mainReel = document.getElementById('mainReel');
+                var droneReel = document.getElementById('droneReel');
+                var absReel = document.getElementById('absReel');
                 if(isInViewport(mainReel)){
                     mainReel.play();
                 }else {
                     mainReel.pause();
+                }
+                if(isInViewport(droneReel)){
+                    droneReel.play();
+                }else {
+                    droneReel.pause();
+                }
+                if(isInViewport(absReel)){
+                    absReel.play();
+                }else {
+                    absReel.pause();
                 }
                 console.log(scrollEvent)
             });

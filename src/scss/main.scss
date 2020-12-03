@@ -209,6 +209,11 @@ main {
             margin: 0;
         }
     }
+    
+    video {
+        border-radius: 25px;
+        max-width: 100%;
+    }
 }
 
 .explore {
@@ -232,7 +237,6 @@ main {
     width: 50%;
     min-height: 375px;
     border-radius: 10px;
-    background-color: #999;
 }
 
 // Brand Stategy
