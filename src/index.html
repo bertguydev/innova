@@ -80,7 +80,7 @@
         </div>
     </section>
     <section class="video-sliders">
-        <div class="carousel d-flex no-wrap">
+        <div class="carousel d-flex no-wrap" id="bigVideoSlider">
             <div class="c-item">
                 <img src="images/big_thumbs/charlotte.jpg" alt="charlotte">
             </div>
@@ -98,6 +98,7 @@
             </div>
         </div>
     </section>
+    <button id="forward">forward</button>
     <section class="video-prod">
         <div class="container">
             <h2>Video Production</h2>
@@ -232,44 +233,7 @@
         <p>&#169; Copyright <span id="thisYear"></span> INNOVA. All Rights Reserved.</p>
 
     </footer>
-    <script>
-        function isInViewport(element) {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-        document.addEventListener('DOMContentLoaded', function() {
-            var today = new Date;
-            var theYear = today.getFullYear();
-            document.getElementById('thisYear').innerHTML = theYear;
-
-            document.addEventListener('scroll', function(scrollEvent){
-                var mainReel = document.getElementById('mainReel');
-                var droneReel = document.getElementById('droneReel');
-                var absReel = document.getElementById('absReel');
-                if(isInViewport(mainReel)){
-                    mainReel.play();
-                }else {
-                    mainReel.pause();
-                }
-                if(isInViewport(droneReel)){
-                    droneReel.play();
-                }else {
-                    droneReel.pause();
-                }
-                if(isInViewport(absReel)){
-                    absReel.play();
-                }else {
-                    absReel.pause();
-                }
-                console.log(scrollEvent)
-            });
-        });
-    </script>
+    <script src="js/innv.js"></script>
    
 </body>
 </html>

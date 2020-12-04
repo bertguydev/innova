@@ -177,10 +177,10 @@ main {
 .video-sliders {
     padding: 25px 0;
     background-color: #2d2d2d;
-    overflow: hidden;
 
     .carousel {
         width: 2500px;
+        overflow: hidden;
     }
 
     .c-item {
