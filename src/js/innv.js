@@ -7,23 +7,18 @@ function isInViewport(element) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
-function hoverScroll(hevent) {
-console.log('yup');
-}
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Footer Copyright Year
     var today = new Date;
     var theYear = today.getFullYear();
     document.getElementById('thisYear').innerHTML = theYear;
-    var forward = document.getElementById('forward');
-    forward.addEventListener('mouseover', function(){
-        hoverScroll();
-    });
 
+    // Autoplay videos when visible in viewport
     document.addEventListener('scroll', function(scrollEvent){
         var mainReel = document.getElementById('mainReel');
         var droneReel = document.getElementById('droneReel');
         var absReel = document.getElementById('absReel');
-
 
         if(isInViewport(mainReel)){
             mainReel.play();
@@ -42,4 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         console.log(scrollEvent)
     });
+
+    // Sliders
+    // var bigSlider = document.getElementById('bigVideoSlider');
+    // var embla1 = EmblaCarousel(bigSlider);
 });
