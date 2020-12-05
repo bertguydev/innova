@@ -201,6 +201,7 @@ main {
     .slider-video {
         max-width: 1000px;
     }
+    
 }
 
 // embla
@@ -209,8 +210,14 @@ main {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
+
+    video {
+        border-radius: 14px;
+    }
+      
   }
-  
+
+
   .embla__viewport {
     overflow: hidden;
     width: 100%;
