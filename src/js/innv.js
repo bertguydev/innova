@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var theYear = today.getFullYear();
     document.getElementById('thisYear').innerHTML = theYear;
 
+    document.getElementById('bigVideoContainer').scrollLeft = 500;
+
     // Autoplay videos when visible in viewport
     document.addEventListener('scroll', function(scrollEvent){
         var mainReel = document.getElementById('mainReel');
