@@ -9,12 +9,65 @@ function isInViewport(element) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    $('.embla__container').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        variableWidth: true,
+        centerMode: true
+      });
+      $('.small-slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        asNavFor: '.embla__container',
+        centerMode: true,
+        focusOnSelect: true,
+        swipe: false,
+        slidesToScroll: 3
+      });
+
+    $('.small-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $(".big-videos video").each(function(){
+            $(this).get(0).pause();
+        });
+        if( $('.video-item.slick-current').find('video').length !== 0) {
+            $(".embla__container .slick-current video")[0].play();
+        }
+    });
+
+    $('.graphic-arts').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        edgeFriction: 0,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+
     // Footer Copyright Year
     var today = new Date;
     var theYear = today.getFullYear();
     document.getElementById('thisYear').innerHTML = theYear;
-
-    document.getElementById('bigVideoContainer').scrollLeft = 500;
 
     // Autoplay videos when visible in viewport
     document.addEventListener('scroll', function(scrollEvent){
@@ -37,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }else {
             absReel.pause();
         }
-        console.log(scrollEvent)
     });
 
     // Sliders

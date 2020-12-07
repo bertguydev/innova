@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innova Productions</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <header>
@@ -13,14 +14,14 @@
                 <picture>
                     <source srcset="images/logo.svg" type="image/svg">
                     <source srcset="images/logo.png" type="image/png">
-                    <img src="images/logo.png" load="lazy">
+                    <img src="images/logo.png" loading="eager">
                 </picture>
             </div>
             <nav class="d-flex align-items-end">
                 <div class="nav-item">Home</div>
-                <div class="nav-item">Reel</div>
-                <div class="nav-item">Services</div>
-                <div class="nav-item">About Us</div>
+                <a href="#reel"><div class="nav-item">Reel</div></a>
+                <a href="#services"><div class="nav-item">Services</div></a>
+                <a href="#aboutUs"><div class="nav-item">About Us</div></a>
                 <div class="nav-item">Contact</div>
             </nav>
         </div>
@@ -35,7 +36,7 @@
             </div>
         </div>
         <div class="video-area">
-            <video controls autoplay muted loop>
+            <video controls autoplay muted loop id="homeReel">
                 <source src="images/videos/reel.mp4#t=1" type="video/mp4">
             </video> 
         </div>
@@ -58,7 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="description">
+    <section class="description" id="services">
         <div class="container">
             <div class="d-flex w100 align-items-end">
                 <article>
@@ -68,7 +69,7 @@
             </div>
         </div>
     </section>
-    <section class="reel">
+    <section class="reel" id="reel">
         <div class="container">
             <div class="d-flex w100">
                 <div class="reel-area w100">
@@ -79,16 +80,11 @@
             </div>
         </div>
     </section>
-    <section class="big-videos">
-        <div class="d-flex no-wrap" id="bigVideoContainer">
-            <div class="video-item">
-                <video class="slider-video" controls poster="images/big_thumbs/purge.jpg">
-                    <source src="images/videos/purge.mp4" type="video/mp4">
-                </video> 
-            </div>
+    <section class="big-videos" id="bigVideoContainer">
+        <div class="embla__container" >
             <div class="video-item">
                 <video class="slider-video" controls poster="images/big_thumbs/ashley.jpg">
-                    <source src="images/videos/abs.mp4" type="video/mp4">
+                    <source src="images/videos/ambs.mp4" type="video/mp4">
                 </video> 
             </div>
             <div class="video-item">
@@ -103,223 +99,45 @@
             </div>
             <div class="video-item">
                 <video class="slider-video" controls>
-                    <source src="images/videos/lahabra.mp4" type="video/mp4">
+                    <source src="images/videos/hunger-games.mp4" type="video/mp4">
                 </video> 
             </div>
             <div class="video-item">
                 <video class="slider-video" controls>
-                    <source src="images/videos/charlotte.mp4" type="video/mp4">
+                    <source src="images/videos/marvel.mp4" type="video/mp4">
                 </video> 
             </div>
             <div class="video-item">
-                <video class="slider-video" controls>
-                    <source src="images/videos/lahabra.mp4" type="video/mp4">
+                <video class="slider-video" controls poster="images/big_thumbs/purge.jpg">
+                    <source src="images/videos/disney.mp4" type="video/mp4">
                 </video> 
             </div>
             <div class="video-item">
-                <video class="slider-video" controls>
-                    <source src="images/videos/nbc-promo.mp4" type="video/mp4">
-                </video> 
-            </div>
-            <div class="video-item">
-                <video class="slider-video" controls>
-                    <source src="images/videos/sag.mp4" type="video/mp4">
-                </video> 
-            </div>
-            <div class="video-item">
-                <video class="slider-video" controls>
-                    <source src="images/videos/snf.mp4" type="video/mp4">
-                </video> 
-            </div>
-            <div class="video-item">
-                <video class="slider-video" controls>
-                    <source src="images/videos/despicable-me.mp4" type="video/mp4">
-                </video> 
-            </div>
-            <div class="video-item">
-                <video class="slider-video" controls>
-                    <source src="images/videos/zombies.mp4" type="video/mp4">
+                <video class="slider-video" controls poster="images/big_thumbs/purge.jpg">
+                    <source src="images/videos/purge.mp4" type="video/mp4">
                 </video> 
             </div>
         </div>
     </section>
     <section class="video-sliders embla" id="videoSlider">
-        <div class="embla__container">
+        <div class="small-slider">
             <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/amb.jpg" alt="Ashley Graham" load="lazy">
+                <img src="images/sm_thumbs/amb.jpg" alt="Ashley Graham" loading="lazy">
             </div>
             <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/amb2.jpg" alt="american beauty star" load="lazy">
+                <img src="images/sm_thumbs/amb2.jpg" alt="american beauty star" loading="lazy">
             </div>
             <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/ampony.jpg" alt="Ampony" load="lazy">
+                <img src="images/sm_thumbs/ampony.jpg" alt="Ampony" loading="lazy">
             </div>
             <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/hunger-game.jpg" alt="hunger games" load="lazy">
+                <img src="images/sm_thumbs/hunger-game.jpg" alt="hunger games" loading="lazy">
             </div>
             <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/marvel.jpg" alt="Boot camp" load="lazy">
+                <img src="images/sm_thumbs/marvel.jpg" alt="Boot camp" loading="lazy">
             </div>
             <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/descend.jpg" alt="descendants" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/boot-camp.jpg" alt="Boot camp" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/charlotte.jpg" alt="Charlotte" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/cira.jpg" alt="cira" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/future.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/revlon.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/interview.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/musica.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/minion.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/nbc-brand.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/revlon.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/roku.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/sag.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/snf.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/street-chaser.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/tbn.jpg" alt="" load="lazy">
-            </div>
-            <div class="embla__slide">
-                <div class="play-overlay d-flex justify-content-center align-items-center">
-                    <div class="play-btn">
-                        
-                    </div>
-                </div>
-                <img src="images/sm_thumbs/zombie.jpg" alt="" load="lazy">
+                <img src="images/sm_thumbs/purge.jpg" alt="purge" loading="lazy">
             </div>
         </div>
     </section>
@@ -369,13 +187,13 @@
         </div>
     </section>
     <section class="cover-slides">
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="images/melissa.jpg" alt="melissa"></a>
-            <a class="carousel-item" href="#two!"><img src="images/metro-fusion.jpg" alt="metro fusion"></a>
-            <a class="carousel-item" href="#three!"><img src="images/etyofla.jpg" alt="etofla"></a>
-            <a class="carousel-item" href="#four!"><img src="images/melissa.jpg" alt="melissa"></a>
-            <a class="carousel-item" href="#five!"><img src="images/metro-fusion.jpg" alt="metro fusion"></a>
-            <a class="carousel-item" href="#six!"><img src="images/etyofla.jpg" alt="etofla"></a>
+        <div class="graphic-arts">
+            <img src="images/design/abs.jpg" alt="melissa">
+            <img src="images/design/abs1.jpg" alt="metro fusion">
+            <img src="images/design/es1.jpg" alt="etofla">
+            <img src="images/design/es2.jpg" alt="melissa">
+            <img src="images/design/es3.jpg" alt="metro fusion">
+            <img src="images/design/es4.jpg" alt="etofla">
         </div>
     </section>
     <section class="digital-strategy">
@@ -417,11 +235,11 @@
             </div>
         </div>
     </section>
-    <section class="profiles">
+    <section class="profiles" id="aboutUs">
         <div class="container">
             <div class="profile d-flex align-items-center">
                 <div class="profile-photo">
-                    <img src="images/yessie.jpg" alt="Yessie" load="lazy">
+                    <img src="images/yessie.jpg" alt="Yessie" loading="lazy">
                 </div>
                 <div class="profile-description col-9">
                     <h3>Yessie Torres</h3>
@@ -431,7 +249,7 @@
             </div>
             <div class="profile d-flex align-items-center">
                 <div class="profile-photo">
-                    <img src="images/ernest.jpg" alt="Ernest" load="lazy">
+                    <img src="images/ernest.jpg" alt="Ernest" loading="lazy">
                 </div>
                 <div class="profile-description col-9">
                     <h3>Ernest Sanchez</h3>
@@ -445,7 +263,7 @@
         <picture>
             <source srcset="images/footer-logo.svg" type="image/svg">
             <source srcset="images/footer-logo.png" type="image/png">
-            <img src="images/footer-logo.svg" load="lazy">
+            <img src="images/footer-logo.svg" loading="lazy">
         </picture>
         <nav class="footer-nav d-flex w100 justify-content-center">
             <div class="nav-item">Privacy Policy</div>
@@ -458,20 +276,10 @@
         <p>&#169; Copyright <span id="thisYear"></span> INNOVA. All Rights Reserved.</p>
 
     </footer>
-    <style>
-        
-      </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
-      <script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js">
-      </script>
-      <script>
-        var emblaNode = document.getElementById("videoSlider");
-        var embla = EmblaCarousel(emblaNode, {
-            dragFree: true,
-            containScroll: "trimSnaps"
-        });
-      </script>
-
     <script src="js/innv.js"></script>
 </body>
 </html>

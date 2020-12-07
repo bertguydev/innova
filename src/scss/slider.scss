@@ -1,0 +1,39 @@
+.slick-slide:active {
+    border: none;
+}
+
+.slick-prev, 
+.slick-next {
+    position: absolute;
+    font-size: 0;
+    z-index: 1;
+    background: none;
+    border: none;
+}
+
+.slick-prev:focus, 
+.slick-next:focus {
+    outline: none;
+}
+
+.slick-prev:before {
+    content: "\2023";
+    font-size: 120px;
+    color: #fff;
+    text-shadow: 0 3px 10px #000;
+}
+
+button.slick-prev {
+    transform: rotate(180deg);
+}
+
+.slick-next:before {
+    content: "\2023";
+    font-size: 120px;
+    color: #fff;
+    text-shadow: 0 3px 10px #000;
+}
+
+button.slick-next.slick-arrow {
+    right: 0;
+}
