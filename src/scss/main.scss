@@ -15,7 +15,7 @@ header {
         padding: 10px;
 
         img {
-            max-width: 260px;
+            max-width: 210px;
             margin: 30px 0 0;
         }
     }   
@@ -25,7 +25,7 @@ header {
             color: #595959;
             padding: 10px 15px;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 17px;
             text-transform: uppercase;
             padding: 20px 25px;
         }
@@ -34,7 +34,7 @@ header {
 
 // Main Hero Area
 main {
-    height: calc(100vh - 178px);
+    height: calc(100vh - 155px);
 
     .overlay {
         height: 100%;
@@ -47,14 +47,14 @@ main {
         }
 
         h1 {
-            font-size: 93px;
+            font-size: 70px;
             color: $lightgrey;
             margin: 0 0 0px;
         }
         p {
             text-transform: uppercase;
             color: $lightgrey;
-            font-size: 28px;
+            font-size: 22px;
             margin: 0;
         }
     }
@@ -79,64 +79,70 @@ main {
     padding: 30px 0;
 
     .past-client {
-        min-width: 100px;
-        height: 120px;
+        height: 82px;
         background-image: url(../images/logos-sprite.jpg);
-        margin: 10px 20px 10px;
+        margin: 10px 50px 15px;
+        
     }
     .past-client:nth-of-type(1) {
-        width: 134px;
-        background-position: -11px -4px;
+        width: 77px;
+        height: 70px;
+        background-position: -8px -4px;
     }
     .past-client:nth-of-type(2) {
-        width: 239px;
-        background-position: -203px -2px;
+        width: 135px;
+        height: 47px;
+        background-position: -125px -14px;
     }
     .past-client:nth-of-type(3) {
-        width: 240px;
-        background-position: -497px -5px;
+        width: 137px;
+        background-position: -301px -7px;
+        height: 67px;
     }
     .past-client:nth-of-type(4) {
-        width: 200px;
-        background-position: -784px 7px;
+        width: 116px;
+        background-position: -471px -6px;
+        height: 43px;
     }
     .past-client:nth-of-type(5) {
-        width: 111px;
-        background-position: -1055px -4px;
-        height: 117px;
+        width: 62px;
+        background-position: -632px -4px;
+        height: 68px;
     }
     .past-client:nth-of-type(6) {
-        width: 145px;
-        height: 72px;
-        background-position: -1224px -14px;
+        width: 83px;
+        height: 40px;
+        background-position: -733px -10px;
     }
     .past-client:nth-of-type(7) {
-        width: 123px;
-        background-position: -46px -153px;
+        width: 69px;
+        background-position: -30px 75px;
+        height: 69px;
     }
     .past-client:nth-of-type(8) {
-        width: 181px;
-        background-position: -232px -161px;
-        height: 104px;
+        width: 106px;
+        background-position: -140px 70px;
+        height: 60px;
     }
     .past-client:nth-of-type(9) {
-        width: 132px;
-        background-position: -436px -159px;
-        height: 106px;
+        width: 77px;
+        background-position: -261px 71px;
+        height: 60px;
     }
     .past-client:nth-of-type(10) {
-        width: 271px;
-        background-position: -617px -176px;
-        height: 57px;
+        width: 160px;
+        background-position: -370px 61px;
+        height: 31px;
     }
     .past-client:nth-of-type(11) {
-        width: 170px;
-        background-position: -929px -142px;
+        width: 97px;
+        background-position: -557px 81px;
+        height: 70px;
     }
     .past-client:nth-of-type(12) {
-        width: 210px;
-        background-position: -1153px -154px;
-        height: 99px;
+        width: 117px;
+        background-position: -693px 70px;
+        height: 50px;
     }
 }
 
@@ -148,16 +154,20 @@ main {
     color: #9c9c9c;
 
     .w100 {
-        min-height: 630px;
+        min-height: 525px;
+    }
+
+    article {
+        margin: 0 0 40px;
     }
 
     h2 {
-        font-size: 55px;
+        font-size: 48px;
         margin: 0 0 5px;
     }
 
     p {
-        font-size: 23px;
+        font-size: 18px;
     }
 
 }
@@ -213,16 +223,16 @@ main {
 // Video Prod Section
 .video-prod {
     background-color: #e5e5e5;
-    color: #9b9b9b;
-    padding: 90px 0 120px;
+    color: #7a7a7a;
+    padding: 60px 0 75px;
 
     h2 {
-        font-size: 58px;
+        font-size: 42px;
         margin: 0;
     }
     
     p {
-        font-size: 25px;
+        font-size: 18px;
     }
 }
 
@@ -236,7 +246,7 @@ main {
         h2 {
             margin: 0;
             text-transform: uppercase;
-            font-size: 60px;
+            font-size: 45px;
         }
         p {
             margin: 0;
@@ -284,7 +294,15 @@ main {
     color: #9c9c9c;
 
     .w100 {
-        min-height: 630px;
+        min-height: 525px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    article {
+        margin: 0 0 40px;
     }
 }
 
@@ -305,11 +323,12 @@ main {
     color: $lightgrey;
 
     h2 {
-        font-size: 56px;
+        font-size: 42px;
         margin: 0;
     }
     p {
-        font-size: 22px;
+        font-size: 18px;
+        margin: 20px 0 0;
     }
 }
 
@@ -319,7 +338,7 @@ main {
     color: $lightgrey;
 
     h2 {
-        font-size: 62px;
+        font-size: 50px;
         text-transform: uppercase;
         margin: 0;
     }
@@ -350,7 +369,7 @@ main {
     color: $lightgrey;
 
     h2 {
-        font-size: 62px;
+        font-size: 50px;
         text-transform: uppercase;
         margin: 0;
     }
@@ -390,16 +409,20 @@ main {
 
     h2 {
         text-transform: uppercase;
-        font-size: 75px;
+        font-size: 58px;
         margin: 0;
     }
 
     p {
-        font-size: 24px;
+        font-size: 18px;
+    }
+
+    article {
+        margin: 0 0 40px;
     }
 
     .w100 {
-        min-height: 600px;
+        min-height: 520px;
     }
 }
 
@@ -424,9 +447,13 @@ main {
         margin: 0;
     }
 
-    h4, p {
-        font-size: 26px;
+    h4 {
+        font-size: 22px;
         line-height: 1.55;
+    }
+
+    p {
+        font-size: 18px;
     }
     
     h4 {
@@ -449,9 +476,15 @@ footer {
     .nav-item:nth-of-type(1) {
         border-left: none;
     }
+
     svg {
         fill:#696969;
         max-width: 250px;
         margin: 0 auto 20px;
+    }
+
+    img {
+        max-width: 210px;
+        margin: 0 0 20px;
     }
 }
