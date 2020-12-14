@@ -67,6 +67,8 @@ main {
 
         video {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -354,12 +356,10 @@ main {
 
     .p-lax {
         background: url(../images/web-dev-p.png);
-        background-attachment: scroll;
         width: 750px;
         height: 550px;
-        background-attachment: fixed;
         background-repeat: no-repeat;
-        background-position: 820px calc(100% - 10px);
+        background-position: center;
     }
 }
 

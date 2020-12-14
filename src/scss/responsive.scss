@@ -1,2 +1,89 @@
 // Responsive Queries
 
+@media (max-width: 1650px) {
+    .past-client:nth-of-type(11) {
+        display: none;
+    }
+   
+}
+
+@media (max-width: 1530px) {
+    .past-client:nth-of-type(12) {
+        display: none;
+    }
+
+
+    // Reel
+    .reel {
+        video {
+            max-width: 100%;
+            margin: auto;
+        }
+    }
+
+    //Video Production 
+    .video-prod {
+        padding: 50px 0 40px;
+    }
+
+    // Explore and Captivate
+    .explore, .captivate {
+        padding: 40px 0;
+        
+        .col-5 h2 {
+            font-size: 38px;
+        }
+    }
+
+    // Web Mobile
+    .web-mobile, .social {
+
+        text-align: center;
+
+        article {
+            max-width: 100%;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        .d-flex {
+            justify-content: center;
+        }
+        
+    }
+
+    .web-mobile {
+        padding: 30px 0 0;
+        
+        p {
+            margin: 0 0 20px;
+        }
+        
+        .p-lax {
+            background-position: center -180px;
+        }
+    }
+
+    .social {
+        padding: 0px 0 30px;
+
+        h2 {
+            margin: 20px 0 0px;
+        }
+
+        .p-lax {
+            background-position: center;
+        }
+    }
+
+    // Profiles Section
+    .profiles {
+        img {
+            max-width: 85%;
+            margin: auto;
+        }
+    }
+
+}
