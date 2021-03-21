@@ -15,7 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesToScroll: 1,
         arrows: false,
         variableWidth: true,
-        centerMode: true
+        centerMode: true,
+        responsive: [
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
       });
       $('.small-slider').slick({
         slidesToShow: 5,
@@ -25,7 +34,16 @@ document.addEventListener('DOMContentLoaded', function() {
         centerMode: true,
         focusOnSelect: true,
         swipe: false,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                }
+            }
+        ]
       });
 
     $('.small-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
@@ -48,8 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
             settings: {
               arrows: false,
               centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
+              centerPadding: '20px',
+              slidesToShow: 1
             }
           },
           {
@@ -57,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             settings: {
               arrows: false,
               centerMode: true,
-              centerPadding: '40px',
+              centerPadding: '10px',
               slidesToShow: 1
             }
           }
